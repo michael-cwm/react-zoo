@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+.mainWrapper {
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #212121;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.imageWrapper {
+  /* width: 51%; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.textWrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  height: 250px;
+}
+
+span {
+  width: 66%;
+  color: #e0e0e0;
+}
+
+p {
+  color: #c8c8c8;
+  height: 173px;
+  margin: 0px;
+}
+
+.feedButton {
+  height: 50px;
+  width: 150px;
+  background-color: #1db954;
+  border: none;
+  color: #121212;
+  transition: 0.2s ease-in-out;
+}
+
+.feedButton:hover {
+  background-color: #54d782;
+}
+
+.feedButton:disabled {
+  background-color: grey;
+}
+
+.buttonAndBackWrapper {
+  margin-top: 20px;
+  width: 51%;
+  display: flex;
   align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #535353;
+}
+
+h1,
+h4,
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+  color: #eeeeee;
+  margin: 5px 0px 5px 0px;
+}
+
+.headerTitle {
+  margin-left: 20px;
+}
+
+.animalContainer {
+  width: 51%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: #535353;
+  margin-bottom: 30px;
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.backClass {
+  height: initial;
+  color: #eeeeee;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.backClass:hover {
+  cursor: pointer;
+  color: #1db954;
 }
