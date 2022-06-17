@@ -6,10 +6,6 @@ body {
   background-color: #212121;
 }
 
-.imageWrapper {
-  /* width: 51%; */
-}
-
 img {
   display: flex;
   justify-content: center;
@@ -111,4 +107,9 @@ h3 {
 .backClass:hover {
   cursor: pointer;
   color: #1db954;
+}
+
+.lastFed {
+  height: initial;
+  margin-bottom: 10px;
 }

@@ -91,6 +91,7 @@ export const Animal = () => {
                 Mata {animal.name}
               </button>
             )}
+            <p className="lastFed">Matades senast: {animal.lastFed}</p>
             <p className="backClass" onClick={() => navigate(-1)}>
               {" "}
               Tillbaka
